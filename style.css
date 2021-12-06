@@ -1,0 +1,354 @@
+@font-face {
+  font-family: "font1";
+  src: url(./font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "font2";
+  src: url(./font/Montserrat-Thin.ttf);
+}
+
+
+
+
+.box {
+  box-sizing: border-box;
+}
+
+i {
+  color: black;
+  width: 20px;
+}
+
+body {
+  font-family: "font1";
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  justify-content: center/cover;
+  box-sizing: 100%;
+}
+
+nav {
+
+  width: 100%;
+  background: white;
+  background-color: rgba(255, 255, 255, 0.993);
+  font-weight: bold;
+
+}
+
+.language ul {
+  align-items: center;
+}
+
+.language li {
+  padding: 0px;
+}
+
+.FR {
+  border-radius: 20px 0px 0px 20px;
+  border-style: none;
+  justify-content: right;
+  text-align: right;
+  display: inline-block;
+}
+
+nav button {
+  display: inline-block;
+  color: black;
+  margin: 0;
+  height: 100%;
+  border-left: black;
+  border-style: solid;
+  background-color: rgb(216, 208, 208);
+  border-radius: 0px 20px 20px 0px;
+  text-align: left;
+  width: 20px;
+
+}
+
+ul {
+  display: flex;
+  align-items: center/cover;
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+li {
+  padding: 0 15px 0 15px;
+}
+
+header {
+  background: url(./logo/MicrosoftTeams-image\ \(6\).png);
+  justify-content: center/cover;
+
+  background-size: cover;
+  height: 100vh;
+
+  border: none;
+}
+
+.passion {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 450px;
+  font-size: 2rem;
+  background: none;
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 200px;
+  width: 70vh;
+
+}
+
+.header-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 500px;
+  height: 50px;
+  width: 450px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-width: thin;
+  letter-spacing: 4px;
+  font-size: 1.1rem;
+}
+
+p {
+  justify-content: center;
+  width: 80%;
+  text-align: center;
+  margin: 40px auto;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+
+
+
+button {
+
+  background: transparent;
+  color: white;
+  border: white solid;
+  border-width: thin;
+  box-sizing: content-box;
+  height: 30px;
+  width: 140px;
+  margin: 40px auto;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.top div {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 33%;
+  box-sizing: content-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.top h2 {
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.top p {
+  text-align: center;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-size: 0.8rem;
+}
+
+div {
+
+  background: rgb(245, 238, 238);
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  color: black;
+}
+
+.news div {
+  display: block;
+  margin: 30px;
+  justify-content: center;
+  box-sizing: content-box;
+}
+
+.news h1 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.news p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.6rem;
+  width: auto;
+  margin: 0;
+}
+
+.news button {
+  margin: 40px auto;
+  justify-content: center;
+  color: black;
+  height: 40px;
+  width: 160px;
+  border: black solid;
+}
+
+section {
+  background-color: rgb(245, 238, 238);
+
+}
+
+.middle div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  box-sizing: content-box;
+  justify-content: space-around;
+  margin-top: 60px;
+
+  align-items: center;
+}
+
+h3 {
+  width: 65%;
+}
+
+.middle img {
+  font-size: 1rem;
+}
+
+.middle p {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  font-size: 0.6rem;
+  width: 65%;
+
+}
+
+.middle button {
+
+  color: blueviolet;
+  font-weight: bold;
+  margin: 0;
+  border-style: none;
+  text-align: left;
+  width: 65%;
+
+}
+
+.parents button {
+  color: blueviolet;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom {
+  background-color: white;
+}
+
+.bottom div {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  height: 300px;
+  width: 100%;
+  background-color: white;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: left;
+}
+
+.bottom ul {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: blueviolet;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom li {
+  text-align: left;
+  margin: 0%;
+  background-color: white;
+}
+
+.bottom p {
+  text-align: left;
+  margin: 0;
+}
+
+.about {
+  background-color: white;
+}
+
+.about div {
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+
+}
+
+footer {
+  background: black;
+  color: white;
+  height: 150px;
+  width: 100%;
+  justify-content: center;
+}
+
+footer ul {
+
+  background: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: content-box;
+  padding: 60px;
+  font-size: 0.5rem;
+
+}
+
+footer h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 1rem;
+
+}
