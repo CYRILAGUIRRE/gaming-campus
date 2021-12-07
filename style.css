@@ -8,17 +8,17 @@
   src: url(./font/Montserrat-Thin.ttf);
 }
 
+i {
+  font-size: 1rem;
+}
 
 
-
-.box {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-i {
-  color: black;
-  width: 20px;
-}
 
 body {
   font-family: "font1";
@@ -26,67 +26,55 @@ body {
   padding: 0 auto;
   width: 100%;
   justify-content: center/cover;
-  box-sizing: 100%;
 }
 
 nav {
-
+  position: fixed;
+  margin: 0 auto;
+  padding: 0 auto;
+  z-index: 10;
+  height: 40px;
   width: 100%;
   background: white;
   background-color: rgba(255, 255, 255, 0.993);
   font-weight: bold;
-
-}
-
-.language ul {
+  display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-.language li {
-  padding: 0px;
-}
-
-.FR {
-  border-radius: 20px 0px 0px 20px;
-  border-style: none;
-  justify-content: right;
-  text-align: right;
-  display: inline-block;
-}
-
-nav button {
-  display: inline-block;
-  color: black;
-  margin: 0;
-  height: 100%;
-  border-left: black;
-  border-style: solid;
-  background-color: rgb(216, 208, 208);
-  border-radius: 0px 20px 20px 0px;
-  text-align: left;
-  width: 20px;
-
+  font-size: 0.8rem;
 }
 
 ul {
   display: flex;
   align-items: center/cover;
-  font-size: 0.9rem;
   list-style: none;
+  justify-content: center;
 }
 
-li {
-  padding: 0 15px 0 15px;
+nav ul li {
+  margin: 0 10px;
+}
+
+#language {
+  margin: 0 40px;
+}
+
+#language div {
+  background-color: rgb(219, 211, 211);
+  width: 100%;
+  width: 20px;
+  justify-content: center;
 }
 
 header {
-  background: url(./logo/MicrosoftTeams-image\ \(6\).png);
-  justify-content: center/cover;
-
+  background: url(./logo/MicrosoftTeams-image\ \(6\).png) center/cover;
   background-size: cover;
-  height: 100vh;
-
+  min-height: 85vh;
   border: none;
+}
+
+div {
+  display: block;
 }
 
 .passion {
@@ -98,7 +86,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   top: 450px;
-  font-size: 2rem;
+  font-size: 1.4rem;
   background: none;
 }
 
@@ -108,33 +96,30 @@ header {
   transform: translateX(-50%);
   top: 200px;
   width: 70vh;
-
 }
 
 .header-button {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 500px;
+  top: 480px;
   height: 50px;
-  width: 450px;
+  width: 300px;
   text-transform: uppercase;
   font-weight: bold;
   border-width: thin;
   letter-spacing: 4px;
-  font-size: 1.1rem;
+  font-size: 0.7rem;
 }
 
 p {
   justify-content: center;
-  width: 80%;
+  width: 65%;
   text-align: center;
   margin: 40px auto;
   font-weight: bold;
-  font-size: 1rem;
+
 }
-
-
 
 
 
@@ -153,8 +138,15 @@ button {
 section {
   display: flex;
   justify-content: center;
+  min-height: 450px;
   height: 100%;
   align-items: center;
+  background-color: rgb(245, 238, 238);
+
+}
+
+.top {
+  background-color: black;
 }
 
 .top div {
@@ -180,40 +172,35 @@ section {
   font-weight: normal;
   text-transform: lowercase;
   font-size: 0.8rem;
+  margin: 0;
 }
 
-div {
+.news {
 
   background: rgb(245, 238, 238);
   display: flex;
   flex-direction: row;
-  text-align: left;
   color: black;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
 }
 
-.news div {
-  display: block;
-  margin: 30px;
-  justify-content: center;
-  box-sizing: content-box;
-}
 
 .news h1 {
-  text-align: left;
   font-weight: normal;
   font-size: 1.5rem;
 }
 
 .news p {
-  text-align: left;
   font-weight: bold;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   width: auto;
   margin: 0;
 }
 
 .news button {
-  margin: 40px auto;
+  margin: 10px 20px 10px 20px;
   justify-content: center;
   color: black;
   height: 40px;
@@ -221,37 +208,38 @@ div {
   border: black solid;
 }
 
-section {
-  background-color: rgb(245, 238, 238);
+#middle {
+  align-items: flex-start;
+  height: 100%;
+  justify-content: space-evenly;
+}
 
+h3 {
+  font-size: 1rem;
 }
 
 .middle div {
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-height: 400px;
   width: 100%;
+  max-width: 255px;
   box-sizing: content-box;
   justify-content: space-around;
   margin-top: 60px;
 
-  align-items: center;
 }
 
-h3 {
-  width: 65%;
-}
 
-.middle img {
-  font-size: 1rem;
-}
+
 
 .middle p {
   width: 100%;
   margin: 0;
   text-align: left;
-  font-size: 0.6rem;
-  width: 65%;
+  font-size: 0.7rem;
+
 
 }
 
@@ -263,8 +251,11 @@ h3 {
   border-style: none;
   text-align: left;
   width: 65%;
-
+  position: absolute;
+  bottom: -1060px;
 }
+
+
 
 .parents button {
   color: blueviolet;
@@ -275,20 +266,16 @@ h3 {
 }
 
 .bottom {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
   background-color: white;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  font-size: 0.7rem;
+  margin: 10px auto;
 }
 
-.bottom div {
-  display: flex;
-  flex-direction: column;
-  box-sizing: content-box;
-  height: 300px;
-  width: 100%;
-  background-color: white;
-  font-size: 1rem;
-  justify-content: center;
-  align-items: left;
-}
 
 .bottom ul {
   display: flex;
@@ -301,16 +288,27 @@ h3 {
   margin: 0;
 }
 
+
+
 .bottom li {
   text-align: left;
-  margin: 0%;
   background-color: white;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 120px;
+  margin: 0;
+  padding: 0;
 }
 
 .bottom p {
   text-align: left;
   margin: 0;
 }
+
+
 
 .about {
   background-color: white;
@@ -327,28 +325,32 @@ h3 {
 footer {
   background: black;
   color: white;
-  height: 150px;
+  height: 90px;
   width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
-footer ul {
 
-  background: black;
+
+footer ul {
   align-items: center;
   display: flex;
   justify-content: center;
   box-sizing: content-box;
-  padding: 60px;
+  margin: 10px auto;
   font-size: 0.5rem;
 
+}
+
+footer li {
+  margin: 30px 1px 1px 10px;
 }
 
 footer h2 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-
-  font-size: 1rem;
-
+  margin: 10px auto;
+  font-size: 0.9rem;
 }

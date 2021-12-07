@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Gaming campus</title>
 
@@ -23,18 +26,12 @@
                     <li>LE CAMPUS</li>
                     <li>NEWSROOM</li>
                     <li>PARENTS</li>
-                    <li>
-                        <nav class="language">
-                            <ul>
-                                <li>
-                                    <button class="FR">FR</button>
-                                </li>
-                                <li>
-                                    <button class="EN">EN</button>
-                                </li>
-                            </ul>
-                        </nav>
-                    </li>
+                    <ul id="language">
+                        <div>FR</div>
+                        <div></div>
+                        <div>EN</div>
+
+                    </ul>
 
 
 
@@ -85,7 +82,7 @@
         </div>
         <button>LA NEWSROOM > </button>
     </div>
-    <section class="middle">
+    <section id="middle" class="middle">
         <div>
             <img src="./logo/MicrosoftTeams-image (27).png" alt="Réunion">
             <h3>Réunion d'information 19 décembre</h3>
@@ -110,8 +107,11 @@
         </div>
     </section>
     <section class="bottom">
-        <img src="./logo/MicrosoftTeams-image (19).png" alt="logo Gaming Campus">
-        <div>
+        <div class="logoG">
+
+            <img src="./logo/MicrosoftTeams-image (19).png" alt="logo Gaming Campus">
+        </div>
+        <div class="infos">
             <h2>INFOS PRATIQUES</h2>
             <ul>
                 <li>Gaming Business School</li>
@@ -132,8 +132,10 @@
             <button>En savoir plus</button>
         </div>
         <div class="contact">
-
-            <div>NOUS CONTACTEZ
+            <div>
+                <h2>
+                    NOUS CONTACTEZ
+                </h2>
 
                 <ul>
                     <li>04 28 29 81 03</li>
@@ -141,15 +143,26 @@
                 </ul>
 
             </div>
-            <div>NOUS SUIVRE
-                <ul>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li<i class="fab fa-facebook"></i>></li>
-                        <li><i class="fab fa-linkedin"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
-                </ul>
+            <div>
+                <h2>NOUS SUIVRE</h2>
+            </div>
+
+            <div class="social">
+                <div>
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div>
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div>
+                    <i class="fab fa-instagram"></i>
+                </div>
             </div>
             <div>@2018 Gaming Campus.Tout droits réservés.</div>
+        </div>
     </section>
 
     <div class="about">
