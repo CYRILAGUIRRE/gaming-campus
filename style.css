@@ -8,8 +8,37 @@
   src: url(./font/Montserrat-Thin.ttf);
 }
 
-i {
-  font-size: 1rem;
+@media (max-width:600px) {
+  nav {
+    visibility: hidden;
+  }
+
+  .bottom {
+    visibility: hidden;
+  }
+
+  .about {
+    visibility: hidden;
+  }
+
+  #middle section {
+    align-items: center;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  div {
+    font-size: 0.8rem;
+
+  }
+
+  footer ul {
+    font-size: 0.5rem;
+    width: 100%;
+
+  }
 }
 
 
@@ -55,15 +84,20 @@ nav ul li {
   margin: 0 10px;
 }
 
-#language {
-  margin: 0 40px;
+h2 {
+  padding-top: 20px;
 }
+
+#language {
+  margin: 0 1%;
+  height: 13px;
+}
+
+
 
 #language div {
   background-color: rgb(219, 211, 211);
   width: 100%;
-  width: 20px;
-  justify-content: center;
 }
 
 header {
@@ -138,7 +172,7 @@ button {
 section {
   display: flex;
   justify-content: center;
-  min-height: 450px;
+  min-height: 400px;
   height: 100%;
   align-items: center;
   background-color: rgb(245, 238, 238);
@@ -212,6 +246,7 @@ section {
   align-items: flex-start;
   height: 100%;
   justify-content: space-evenly;
+  height: 500px
 }
 
 h3 {
@@ -262,20 +297,24 @@ h3 {
   font-weight: bold;
   text-align: left;
   margin: 0;
-  padding: 0;
+  padding-top: 10px;
 }
+
 
 .bottom {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 20% 20% 20% 20%;
   background-color: white;
   width: 100%;
-  height: 100%;
-  justify-items: center;
-  font-size: 0.7rem;
-  margin: 10px auto;
+  margin-top: 80px;
+  align-items: start;
+  font-size: 0.8rem;
+
 }
 
+#tel {
+  color: black;
+}
 
 .bottom ul {
   display: flex;
@@ -284,7 +323,7 @@ h3 {
   color: blueviolet;
   text-align: left;
   width: 100%;
-  padding: 0;
+  padding-top: 10px;
   margin: 0;
 }
 
@@ -293,6 +332,7 @@ h3 {
 .bottom li {
   text-align: left;
   background-color: white;
+  padding-top: 10px;
 }
 
 .social {
@@ -300,18 +340,20 @@ h3 {
   justify-content: space-between;
   max-width: 120px;
   margin: 0;
-  padding: 0;
+  padding-top: 10px;
 }
 
 .bottom p {
   text-align: left;
   margin: 0;
+  padding-top: 20px;
 }
 
 
 
 .about {
   background-color: white;
+  justify-content: center;
 }
 
 .about div {
@@ -319,13 +361,26 @@ h3 {
   text-align: center;
   box-sizing: border-box;
   padding: 10px;
+}
 
+.about ul {
+  justify-content: space-evenly;
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.right {
+  padding-top: 20px;
+  max-width: 62%;
+  font-weight: bold;
 }
 
 footer {
   background: black;
   color: white;
-  height: 90px;
+  height: 100px;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -338,7 +393,7 @@ footer ul {
   display: flex;
   justify-content: center;
   box-sizing: content-box;
-  margin: 10px auto;
+  padding-top: 10px;
   font-size: 0.5rem;
 
 }
