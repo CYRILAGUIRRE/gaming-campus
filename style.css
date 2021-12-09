@@ -267,7 +267,7 @@ h3 {
 
 .bottom {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: white;
   width: 100%;
   padding: 70px;
