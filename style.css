@@ -52,6 +52,10 @@ nav ul li {
 
 }
 
+nav ul li:hover {
+  border-top: 6px solid blue;
+}
+
 h2 {
   padding-top: 40px;
 }
@@ -93,8 +97,8 @@ div {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 180px;
-  width: 60vh;
+  top: 100px;
+  width: 80vh;
 }
 
 .header-button {
@@ -144,6 +148,7 @@ section {
 
 .top {
   background-color: black;
+  min-height: 580px;
 }
 
 .top div {
@@ -167,8 +172,7 @@ section {
 .top p {
   text-align: center;
   font-weight: normal;
-  text-transform: lowercase;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   margin-top: 10px auto;
 }
 
@@ -220,6 +224,7 @@ h3 {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  min-height: 460px;
 }
 
 .mid-container img {
@@ -249,7 +254,7 @@ h3 {
   text-align: left;
   width: 65%;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
 }
 
 .parents button {
@@ -367,7 +372,6 @@ footer {
   color: white;
   min-height: 150px;
   width: 100%;
-  justify-content: center;
   align-items: center;
 }
 
@@ -380,7 +384,7 @@ footer h2 {
 footer ul {
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   box-sizing: content-box;
   padding-top: 20px;
@@ -388,7 +392,8 @@ footer ul {
 }
 
 footer img {
-  width: 90%;
+  width: 60%;
+  margin: 0 20px;
 }
 
 
@@ -450,8 +455,10 @@ footer img {
   }
 
   .logo img {
-    width: 70%;
-    position: relative;
+    width: 80%;
+    position: absolute;
+    top: 160px;
+
   }
 
 
